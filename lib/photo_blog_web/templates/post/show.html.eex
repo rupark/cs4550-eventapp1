@@ -1,0 +1,11 @@
+
+<p>
+<span><%= link "Edit", to: Routes.post_path(@conn, :edit, @post) %></span>
+<span><%= link "Back", to: Routes.post_path(@conn, :index) %></span>
+</p>
+
+<h1>Show Post</h1>
+
+<p>Event Title: <%= @post.title %></p>
+<p>Description: <%= @post.body %></p>
+<p>Date: <%= @post.eventDate %></p>
